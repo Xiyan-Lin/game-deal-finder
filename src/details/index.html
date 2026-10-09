@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Game details and current PC deals." />
+    <title>Game Details | Game Deal Finder</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Game Deal Finder home">
+        <span class="brand__icon" aria-hidden="true">🎮</span>
+        <span>Game Deal Finder</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Search</a>
+        <a href="/favorites/">Favorites <span id="favorite-count" class="count-badge">0</span></a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <a class="back-link" href="/">← Back to search</a>
+      <div id="details-status" class="status" aria-live="polite"></div>
+      <section id="game-details" class="game-details" aria-live="polite"></section>
+
+      <section id="deals-section" class="deals-panel is-hidden" aria-labelledby="deals-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Price comparison</p>
+            <h2 id="deals-title">Current PC Deals</h2>
+          </div>
+          <div class="deal-controls">
+            <label for="store-filter">
+              Store
+              <select id="store-filter">
+                <option value="all">All stores</option>
+              </select>
+            </label>
+            <label for="deal-sort">
+              Sort
+              <select id="deal-sort">
+                <option value="price-asc">Lowest price</option>
+                <option value="discount-desc">Best discount</option>
+              </select>
+            </label>
+          </div>
+        </div>
+        <div id="deal-status" class="status" aria-live="polite"></div>
+        <div id="deal-list" class="deal-table-wrap"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>Game Deal Finder · WDD 330 Final Project</p>
+      <p>Prices are shown in USD and may change.</p>
+    </footer>
+
+    <script type="module" src="/js/details-page.js"></script>
+  </body>
+</html>

@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 360" role="img" aria-labelledby="title desc">
+  <title id="title">Game image placeholder</title>
+  <desc id="desc">A simple game controller icon on a dark background.</desc>
+  <rect width="640" height="360" fill="#1e293b"/>
+  <circle cx="320" cy="180" r="92" fill="#0f172a" stroke="#22c55e" stroke-width="6"/>
+  <path d="M252 195c-15 0-28-12-28-28v-14c0-35 28-63 63-63h66c35 0 63 28 63 63v14c0 16-13 28-28 28-10 0-19-5-24-13l-17-26h-54l-17 26c-5 8-14 13-24 13Z" fill="none" stroke="#f8fafc" stroke-width="12" stroke-linejoin="round"/>
+  <path d="M270 139v34M253 156h34" stroke="#22c55e" stroke-width="10" stroke-linecap="round"/>
+  <circle cx="366" cy="148" r="7" fill="#22c55e"/>
+  <circle cx="390" cy="170" r="7" fill="#22c55e"/>
+  <text x="320" y="305" fill="#cbd5e1" text-anchor="middle" font-family="Arial, sans-serif" font-size="24">Game Deal Finder</text>
+</svg>

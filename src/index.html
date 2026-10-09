@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Search PC games, compare current deals, and save favorites with Game Deal Finder."
+    />
+    <title>Game Deal Finder</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Game Deal Finder home">
+        <span class="brand__icon" aria-hidden="true">🎮</span>
+        <span>Game Deal Finder</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Search</a>
+        <a href="/favorites/">Favorites <span id="favorite-count" class="count-badge">0</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero__content">
+          <p class="eyebrow">Find a better price before you buy</p>
+          <h1 id="hero-title">Search games. Compare deals. Save favorites.</h1>
+          <p>
+            Find discounted PC games and current free game giveaways in one place.
+          </p>
+          <form id="game-search-form" class="search-form" role="search">
+            <label class="sr-only" for="game-search">Search for a game</label>
+            <input
+              id="game-search"
+              name="q"
+              type="search"
+              minlength="2"
+              placeholder="Try: Elden Ring, Hades, Batman..."
+              autocomplete="off"
+              required
+            />
+            <button type="submit">Search</button>
+          </form>
+        </div>
+      </section>
+
+      <section class="section" aria-labelledby="results-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Game search</p>
+            <h2 id="results-title">Search Results</h2>
+          </div>
+          <label class="sort-control" for="game-sort">
+            Sort
+            <select id="game-sort">
+              <option value="relevance">Relevance</option>
+              <option value="price-asc">Price: low to high</option>
+              <option value="name-asc">Name: A-Z</option>
+            </select>
+          </label>
+        </div>
+
+        <div id="status" class="status" aria-live="polite"></div>
+        <div id="game-results" class="game-grid" aria-live="polite"></div>
+      </section>
+
+
+      <section class="section" aria-labelledby="giveaway-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">GamerPower</p>
+            <h2 id="giveaway-title">Free Games & Giveaways</h2>
+          </div>
+        </div>
+        <div id="giveaway-status" class="status" aria-live="polite"></div>
+        <div id="giveaway-results" class="giveaway-grid"></div>
+      </section>
+
+      <section class="section section--muted" aria-labelledby="featured-title">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">CheapShark</p>
+            <h2 id="featured-title">Current PC Deals</h2>
+          </div>
+        </div>
+        <div id="featured-status" class="status" aria-live="polite"></div>
+        <div id="featured-deals" class="deal-grid"></div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <p>
+        Deal data by
+        <a href="https://www.cheapshark.com/" target="_blank">
+          CheapShark
+        </a>
+        · Giveaway data by
+        <a href="https://www.gamerpower.com/" target="_blank">
+          GamerPower
+        </a>
+      </p>
+    </footer>
+
+    <script type="module" src="/js/main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Your saved favorite games." />
+    <title>Favorites | Game Deal Finder</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="/" aria-label="Game Deal Finder home">
+        <span class="brand__icon" aria-hidden="true">🎮</span>
+        <span>Game Deal Finder</span>
+      </a>
+      <nav class="site-nav" aria-label="Main navigation">
+        <a href="/">Search</a>
+        <a href="/favorites/" aria-current="page">Favorites <span id="favorite-count" class="count-badge">0</span></a>
+      </nav>
+    </header>
+
+    <main class="section">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">Saved locally</p>
+          <h1>Your Favorite Games</h1>
+        </div>
+      </div>
+      <div id="favorites-status" class="status" aria-live="polite"></div>
+      <div id="favorite-results" class="game-grid"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>Favorites are stored in this browser using localStorage.</p>
+    </footer>
+
+    <script type="module" src="/js/favorites-page.js"></script>
+  </body>
+</html>
